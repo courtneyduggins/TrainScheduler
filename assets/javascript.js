@@ -91,6 +91,6 @@ var nextTrainArrivalTime = moment(nextTrain).format("hh:mm");
 
 //$("tbody").append("<tr><th scope="row+ newTrnName +'</td><td>'+ newTrnDest +'</td><td>'+ newTrnFreq +'</td><td>'+ nextTrainArrivalTime +'</td><td>'+ tMinutesUntilTrain +'</td></tr>');
 
-$('tbody').append('<tr><th scope="row">1</th><td>' + newTrnName + '</td><td>' + newTrnDest + '</td><td>' + newTrnTime + '</td><td>' + newTrnFreq + '</td></tr>');
+$('.trainSchedule').append('<tr><th scope="row">1</th><td>' + newTrnName + '</td><td>' + newTrnDest + '</td><td>' + newTrnTime + '</td><td>' + newTrnFreq + '</td></tr>');
 
 });
