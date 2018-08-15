@@ -30,13 +30,13 @@ var TrnFreq = "";
 //submit function. This function collects form data, puts data in 
 //firebase, and clears values for next submission. It also pushes the values 
 //up to each array
-$("#add-train-btn").on("click", function (event) {
-    event.preventDefault();
+$("#add-train-btn").on("click", function () {
+    // event.preventDefault();
    
-    TrnName = $("#train-name-input").val().trim();
+    TrnName = $("#train-input").val().trim();
     TrnDest = $("#dest-input").val().trim();
-    TrnTime = $("#time-input").val().trim();
-    TrnFreq = $("#rate-input").val().trim();
+    TrnTime = $("#firstTrainTime").val().trim();
+    TrnFreq = $("#frequency").val().trim();
 
 
     database.ref().push({
@@ -91,6 +91,7 @@ var nextTrainArrivalTime = moment(nextTrain).format("hh:mm");
 
 //$("tbody").append("<tr><th scope="row+ newTrnName +'</td><td>'+ newTrnDest +'</td><td>'+ newTrnFreq +'</td><td>'+ nextTrainArrivalTime +'</td><td>'+ tMinutesUntilTrain +'</td></tr>');
 
-$('.trainSchedule').append('<tr><th scope="row">1</th><td>' + newTrnName + '</td><td>' + newTrnDest + '</td><td>' + newTrnTime + '</td><td>' + newTrnFreq + '</td></tr>');
+$(".trainSchedule").append('<tr><td>'+ newTrnName +'</td><td>'+ newTrnDest +'</td><td>'+ newTrnFreq +'</td><td>'+ nextTrainArrivalTime +'</td><td>'+ tMinutesUntilTrain +'</td></tr>');
 
+console.log(newTrnName);
 });

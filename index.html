@@ -33,19 +33,19 @@
 
         <div class="jumbotron text-center look">
             <h1>Allllll Aboard!</h1>
-            <p>Choo Choo. A Comprehensive Directory of Train Times</p>
+            <p>Choo! Choo! A Comprehensive Directory of Train Times</p>
           </div>
 
       <!--  Generated Table -->
           <div class="row">
           <div class="col-lg-12">
       
-            <div class="panel panel-info border">
+            <div class="panel panel-info border-top bg-info">
               <div class="panel-heading">
                 <h3 class="panel-title">Current Train Schedule</h3>
               </div>
       
-              <div class="panel-body">
+              <div class="panel-body bg-light">
                   <table class="table table-hover">
                       <thead>
                           <tr>
@@ -70,19 +70,19 @@
         <!-- Form Section -->
         <div class="row">
           <div class="col-lg-12">
-            <div class="panel panel-info border">
+            <div class="panel panel-info border bg-warning">
               <div class="panel-heading">
                 <h3 class="panel-title">Add Train</h3>
               </div>
-              <div class="panel-body">
+              <div class="panel-body bg-light">
                 <form>
                   <div class="form-group"> <!-- Input for Train Names  -->
-                    <label for="traineName">Train Name</label>
-                    <input type="text" class="form-control" id="trainName">
+                    <label for="trainName">Train Name</label>
+                    <input type="text" class="form-control" id="train-input">
                   </div>
                   <div class="form-group"> <!-- Input for Destinations -->
                     <label for="destination">Destination</label>
-                    <input type="text" class="form-control" id="destination">
+                    <input type="text" class="form-control" id="dest-input">
                   </div>	
                   <div class="form-group"> <!-- First Train Time  -->
                     <label for="firstTrainTime">First Train Time (00:00 - military time)</label>
@@ -92,7 +92,7 @@
                     <label for="frequency">Frequency (min)</label>
                     <input type="text" class="form-control" id="frequency">
                   </div>	
-                  <button id="submit" type="submit" class="btn btn-info">Submit</button>
+                  <button id="add-train-btn" type="submit" class="btn btn-info">Submit</button>
                 </form>
       
               </div>
@@ -101,7 +101,7 @@
         </div> <!-- <div class="row"> -->
       
       </div> <!--  <div class="container"> -->
-
+        <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Firebase Reference -->
     <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
 
